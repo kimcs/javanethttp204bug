@@ -1,7 +1,7 @@
 Build docker image:
 `$ docker build -t javanethttp204bug .`
 
-Run docker image and observe "TEST FAILED" at REQUEST 5 after little more than a minute.
+Run docker image and observe "TEST FAILED" at REQUEST 2 after little more than a minute.
 `$ docker run -it javanethttp204bug`
 
 This demonstrates a bug in java.net.http related to return status code 204.
